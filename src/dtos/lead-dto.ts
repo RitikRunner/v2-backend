@@ -9,7 +9,7 @@ function decryptField(
     ? decryptPersonalData(encryptedBuffer, keyVersion)
     : null;
 }
-
+ 
 // Serializes a Lead for API responses: decrypts the *Enc PII fields for
 // authorized staff and NEVER exposes the raw *Enc/*Hash buffers, encKeyVersion,
 // or soft-delete/DPDP-internal columns.

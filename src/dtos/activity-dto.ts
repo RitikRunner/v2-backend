@@ -9,7 +9,7 @@ function decryptField(
     ? decryptPersonalData(encryptedBuffer, keyVersion)
     : null;
 }
-
+ 
 export function toActivityDto(activity: Activity) {
   const keyVersion = activity.encKeyVersion ?? 1;
   return {

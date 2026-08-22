@@ -10,7 +10,7 @@ export async function createEnum(
     `DO $$ BEGIN IF NOT EXISTS (SELECT 1 FROM pg_type WHERE typname = '${name}') THEN CREATE TYPE "${name}" AS ENUM (${list}); END IF; END $$;`,
   );
 }
-
+ 
 export async function dropEnum(
   queryRunner: QueryRunner,
   name: string,

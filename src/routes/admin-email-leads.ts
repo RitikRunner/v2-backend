@@ -9,5 +9,5 @@ router.use(requireAuth);
 router.use(requireRole(UserRole.ADMIN, UserRole.HOD));
 
 router.post("/poll", triggerEmailLeadPoll);
-
+ 
 export default router;

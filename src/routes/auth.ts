@@ -11,6 +11,6 @@ router.post(
   requireAuth,
   validate(logoutSchema),
   authController.logout,
-);
+); 
 
 export default router;
