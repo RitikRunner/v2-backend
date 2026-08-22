@@ -13,4 +13,4 @@ export class ExternalServiceError extends AppError {
     this.service = service;
     this.upstreamStatus = options.upstreamStatus;
   }
-}
+} 
