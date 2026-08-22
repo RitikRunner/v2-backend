@@ -1,0 +1,13 @@
+.dockerignore
+.env
+node_modules
+dist
+graphify-out
+package-lock.json
+.claude/
+.agents/
+CLAUDE.md
+
+*.log
+
+.DS_Store
